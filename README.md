@@ -1,6 +1,6 @@
 # Ulises Garcia
 
-# Characther Controller con Unity 
+# Character Controller con Unity 
 
 Unity: CHARACTER CONTROLLER basado en el curso de
 GamerGarage
