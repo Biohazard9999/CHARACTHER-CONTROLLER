@@ -37,8 +37,14 @@ public class MoveWithFloor : MonoBehaviour
 
                 if (groudPosition != lastGroudPosition && groudName == lastGroundName)
                 {
-                           
+                
+
                     this.transform.position +=groudPosition-lastGroudPosition;
+
+                    player.enabled = false;
+                    player.transform.position = this.transform.position;
+                    player.enabled = true;
+
                 }
                 
                 if (actualRot!=lastRot && groudName==lastGroundName)

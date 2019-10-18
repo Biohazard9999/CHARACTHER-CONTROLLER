@@ -36,6 +36,9 @@ public class PlayerController : MonoBehaviour{
     // Update is called once per frame
     void Update()
     {
+
+
+
         horizontalMove = Input.GetAxis("Horizontal");
         verticalMove = Input.GetAxis("Vertical");
 
@@ -49,13 +52,22 @@ public class PlayerController : MonoBehaviour{
 
         movePlayer = movePlayer * playerSpeed;
 
-        player.transform.LookAt(player.transform.position+movePlayer);
+        player.transform.LookAt(player.transform.position + movePlayer);
+
 
         SetGravity();
-
         PlayerSkills();
 
+
+
+
+
         player.Move(movePlayer * Time.deltaTime);
+
+
+
+
+
 
         //Debug.Log(player.velocity.magnitude);
 
@@ -90,6 +102,7 @@ public class PlayerController : MonoBehaviour{
         
         if (player.isGrounded)
         {
+            //fallvelocity = 0;
             fallvelocity = -gravity * Time.deltaTime;
             movePlayer.y =fallvelocity;
         }
