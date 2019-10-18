@@ -10,9 +10,9 @@ Ecena simple donde el personaje puede:
 moverse respecto a la camara,
 saltar,
 deslizar en pendientes mayores al limite del characther controller en este caso mayor de 45 grados ,empujar objetos con rigybody,
-sugetar objetos con rigybody,
+sugetar objetos con rigybody,personaje sigie movimiento jde plataforma moviles
 
- aun no consigo que el personaje  se mueva al mismo tiempo que la plataforma
+
 
 
 ## Mi youtube
